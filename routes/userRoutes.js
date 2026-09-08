@@ -6,8 +6,8 @@ const checkin = require("../middleware/checkinMiddleware")
 
 const {getProfile,createUser} = require("../controllers/userControllers")
 
-router.get("/user",checkin,getProfile)
-router.post("/user",checkin,createUser)
+router.get("/user",getProfile)
+router.post("/user",createUser)
 
 
 module.exports= router;
